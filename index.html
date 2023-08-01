@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de votacion</title>
+    <link rel="stylesheet" href="./estaticos/css/styles.css">
+    
+</head>
+
+<body>
+        <div class="contenedora">
+            <h1>Formulario de votacion</h1>
+            <div style="width: 400px;">
+                Nombre y apellido:  <input id="idnombre"    name="nombre"   class="inp">  <span id="errorNombre" class="span">* Debe colocar el nombre y apellido</span><br>
+                Alias:              <input id="idalias"     name="alias"    class="inp">                <span id="errorAlias" class="span">* Debe colocar un alias valido</span><br>
+                RUT:                <input id="idrut"       name="rut"      class="inp" type="number">                      <span id="errorRut" class="span">* Debe colocar un rut valido</span><br>
+                Email:              <input id="idemail"     name="email"    class="inp">                <span id="errorEmail" class="span">* El formato del mail no es valido</span><br>
+
+                Region:
+                <select id="idregion" name="region">
+                    <option>region x</option>
+                    <option>region y</option>
+                    <option>region z</option>
+                </select><br>
+
+                Comuna:
+                <select id="idcomuna" name="comuna">
+                    <option>comuna x</option>
+                    <option>comuna y</option>
+                    <option>comuna z</option>
+                </select><br>
+
+                Candidato:
+                <select id="idcandidato" name="candidato">
+                    <option>candidato x</option>
+                    <option>candidato y</option>
+                    <option>candidato z</option>
+                </select><br>
+            </div>
+            Como se entero de nosotros:
+            <div id="check">
+            <input type="checkbox" id="web"   value="web"   > web
+            <input type="checkbox" id="tv"    value="tv"    > TV
+            <input type="checkbox" id="redes" value="redes" >Redes sociales
+            <input type="checkbox" id="amigo" value="amigo" >Amigo<br><br>
+            </div>
+
+            <button id="btn">Votar</button><br>
+
+        </div>
+</body>
+
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+<!-- Validacion y envio de datos con ajax y jquery desde el front-->
+<script src="./estaticos/js/validacion.js"></script>
+<script>
+</script>
+</html>
